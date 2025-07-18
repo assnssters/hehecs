@@ -6,7 +6,7 @@ mkdir diska
 mount /dev/$disk diska && echo "OK:Disk is mounted!" || echo "E:Mount disk error 404/1"
 sleep 2
 cd ~/diska 
-echo "Sure this disk is filesystem host? y/n: " yan
+read -p "Sure this disk is filesystem host? y/n: " yan
 case $yan in
     Y|y) clear; echo "Continue to go host!";;
     N|n) echo "Pls try again, huhu";exit;;
