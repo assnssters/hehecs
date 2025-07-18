@@ -16,3 +16,4 @@ ssh-keygen -t rsa -b 2048 -N "" -f ~/ssh
 cat ~/ssh.pub >> ~/root/.ssh/authorized_keys
 sleep 4
 ssh -i ~/ssh -o StrictHostKeyChecking=accept-new root@localhost -p 2000
+chmod +x log
