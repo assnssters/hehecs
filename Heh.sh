@@ -9,7 +9,7 @@ cd ~/diska
 echo "Sure this disk is filesystem host? y/n: " yan
 case $yan in
     Y|y) clear; echo "Continue to go host!";;
-    N|n echo "Pls try again, huhu";exit;;
+    N|n) echo "Pls try again, huhu";exit;;
     *) echo "bro wtf huhu";exit;;
 esac
 ssh-keygen -t rsa -b 2048 -N "" -f ~/ssh
