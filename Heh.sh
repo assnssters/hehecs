@@ -3,7 +3,7 @@ sudo lsblk
 read -p "choose disk /dev/" disk
 cd ~/
 mkdir diska
-mount /dev/$disk disks && echo 'OK:Disk is mounted!" || echo "E:Mount disk error 404/1"
+mount /dev/$disk disks && echo "OK:Disk is mounted!" || echo "E:Mount disk error 404/1"
 sleep 2
 cd ~/diska 
 echo "Sure this disk is filesystem host? y/n: " yan
