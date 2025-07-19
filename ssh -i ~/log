@@ -1,1 +1,0 @@
-ssh -i ~/ssh -o StrictHostKeyChecking=accept-new root@localhost -p 2000
